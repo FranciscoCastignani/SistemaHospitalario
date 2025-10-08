@@ -2,6 +2,7 @@ package entidades;
 
 import enumeraciones.EspecialidadMedica;
 import jakarta.persistence.*;
+import lombok.Setter;
 
 import java.util.List;
 
@@ -27,5 +28,6 @@ public class Departamento {
 
     @ManyToOne
     @JoinColumn(name = "id-Hospital")
+    @Setter
     private Hospital hospital;
 }

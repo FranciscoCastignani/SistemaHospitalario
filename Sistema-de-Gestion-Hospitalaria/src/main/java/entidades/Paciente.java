@@ -1,6 +1,7 @@
 package entidades;
 
 import jakarta.persistence.*;
+import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 import org.hibernate.annotations.Cascade;
 
@@ -22,6 +23,7 @@ public class Paciente extends Persona{
 
     @ManyToOne
     @JoinColumn(name = "id-hospital")
+    @Setter
     private Hospital hospital;
 
     @OneToMany(mappedBy = "paciente")

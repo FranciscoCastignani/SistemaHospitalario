@@ -1,3 +1,4 @@
+import entidades.Hospital;
 import jakarta.persistence.EntityManagerFactory;
 import patrones.SingletonDB;
 
@@ -5,9 +6,10 @@ public class Main {
     public static void main(String[] args) {
         try{
 
-
         SingletonDB singletonDB = new SingletonDB("Sistema-Hospitalario-PU");
         EntityManagerFactory emf = singletonDB.ConectarBDD() ;
+
+
 
         emf.close();
 
