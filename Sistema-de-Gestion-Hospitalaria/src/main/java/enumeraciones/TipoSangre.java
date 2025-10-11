@@ -1,6 +1,9 @@
 package enumeraciones;
 
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
 
 public enum TipoSangre {
     A_POSITIVO("A+"),
@@ -14,8 +17,4 @@ public enum TipoSangre {
 
     @Getter
     private final String descripcion;
-
-    TipoSangre(String descripcion) {
-        this.descripcion = descripcion;
-    }
 }

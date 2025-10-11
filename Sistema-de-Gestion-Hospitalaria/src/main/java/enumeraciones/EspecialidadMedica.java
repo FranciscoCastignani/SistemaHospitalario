@@ -1,6 +1,9 @@
 package enumeraciones;
 
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
 
 public enum EspecialidadMedica {
     CARDIOLOGIA("Cardiologia"),
@@ -19,7 +22,4 @@ public enum EspecialidadMedica {
     @Getter
     private final String descripcion;
 
-    EspecialidadMedica(String descripcion){
-        this.descripcion = descripcion;
-    }
 }

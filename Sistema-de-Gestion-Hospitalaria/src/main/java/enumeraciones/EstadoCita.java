@@ -1,6 +1,9 @@
 package enumeraciones;
 
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
 
 public enum EstadoCita {
     PROGRAMADA("Programada"),
@@ -12,7 +15,4 @@ public enum EstadoCita {
     @Getter
     private final String descripcion;
 
-    EstadoCita(String descripcion){
-        this.descripcion = descripcion;
-    }
 }

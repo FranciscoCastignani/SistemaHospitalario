@@ -3,7 +3,6 @@ package entidades;
 import jakarta.persistence.*;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
-import org.hibernate.annotations.Cascade;
 
 import java.util.List;
 

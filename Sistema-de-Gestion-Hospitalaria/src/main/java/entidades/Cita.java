@@ -2,6 +2,7 @@ package entidades;
 
 import enumeraciones.EstadoCita;
 import jakarta.persistence.*;
+import lombok.Getter;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -12,6 +13,7 @@ public class Cita {
     @Id
     private Long id;
 
+    @Getter
     private LocalDateTime fechaHora;
 
     private BigDecimal costo;
@@ -35,6 +37,7 @@ public class Cita {
 
     //Estado Cita
     @Enumerated(EnumType.STRING)
+    @Getter
     private EstadoCita estado;
 
 }
